@@ -1,0 +1,75 @@
+﻿@model IEnumerable<AspCourse.Models.User>
+
+@{
+    ViewData["Title"] = "AddUser";
+}
+
+<h2>AddUser</h2>
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Surname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Birthday)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Surname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Birthday)
+                    </td>
+                    <td>
+                        @{
+                            var isAdded = false;
+                            foreach (var members in ViewBag.Chat.ChatMembers)
+                            {
+                                if (members.UserId.Equals(item.Id))
+                                {
+                                    isAdded = true;
+                                    break;
+                                }
+                            }
+                            if (isAdded)
+                            {
+
+                                <button type="submit" class="btn btn-danger" asp-controller="Chats"
+                                        asp-action="DeleteUserFromChat" asp-route-id="@ViewBag.IdChat"
+                                        asp-route-idUser="@item.Id">
+                                    Delete
+                                </button>
+                            }
+                            else
+                            {
+                                <button type="submit" class="btn btn-success" asp-controller="Chats"
+                                        asp-action="AddUserForChat" asp-route-id="@ViewBag.IdChat"
+                                        asp-route-idUser="@item.Id">
+                                    Add
+                                </button>
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

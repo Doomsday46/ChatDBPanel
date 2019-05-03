@@ -1,0 +1,42 @@
+﻿@model IEnumerable<AspCourse.Models.database.entity.Message>
+
+@{
+    ViewData["Title"] = "HistoryMessage";
+}
+
+<h2>HistoryMessage</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SendingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chat)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SendingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chat.Name)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

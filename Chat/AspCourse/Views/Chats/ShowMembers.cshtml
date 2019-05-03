@@ -1,0 +1,49 @@
+﻿@model IEnumerable<AspCourse.Models.database.entity.ChatMember>
+
+@{
+    ViewData["Title"] = "ShowMembars";
+}
+
+<h2>ShowMembars</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Role
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Chat)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @if (item.IsAdmin)
+                {
+                    <span class="badge badge-primary">Admin</span>
+                }
+                else
+                {
+                    <span class="badge badge-secondary">User</span>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chat.Name)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
