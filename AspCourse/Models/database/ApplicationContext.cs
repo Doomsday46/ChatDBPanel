@@ -64,14 +64,23 @@ namespace AspCourse.Models
                 Password = adminPassword,
                 RoleId = adminRole.Id
             };
-            Random random = new Random();
+            
             modelBuilder.Entity<Role>().HasData(new Role[] { adminRole, userRole });
 
+            var users = fillUsers(adminUser, userRole.Id);
+
+            modelBuilder.Entity<User>().HasData(users);
+
+            base.OnModelCreating(modelBuilder);
+        }
+
+        private User[] fillUsers(User admin, int userRoleId) {
             var users = new User[31];
-            users[0] = adminUser;
+            users[0] = admin;
+            Random random = new Random();
             for (int i = 0; i < 30; i++)
             {
-                
+
                 int randomDay = random.Next(1, 28);
                 int randomMonth = random.Next(1, 12);
                 int randomYear = random.Next(1990, 2000);
@@ -83,14 +92,11 @@ namespace AspCourse.Models
                     Birthday = new DateTime(randomYear, randomMonth, randomDay),
                     Email = "MockEmail" + i + "@mail.ru",
                     Password = HashingPassword.GetHashPassword("123456"),
-                    RoleId = userRole.Id
+                    RoleId = userRoleId
                 };
                 users[i + 1] = user;
             }
-
-            modelBuilder.Entity<User>().HasData(users);
-
-            base.OnModelCreating(modelBuilder);
+            return users;
         }
     }
 }
