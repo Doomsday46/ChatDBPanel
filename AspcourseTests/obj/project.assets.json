@@ -10193,11 +10193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Chat\\AspcourseTests\\AspcourseTests.csproj",
-      "projectName": "AspcourseTests",
-      "projectPath": "G:\\Chat\\AspcourseTests\\AspcourseTests.csproj",
+      "projectUniqueName": "C:\\GitHub\\ChatDBPanel\\AspcourseTests\\AspcourseTests.csproj",
+      "projectName": "ChatDBPanelTests",
+      "projectPath": "C:\\GitHub\\ChatDBPanel\\AspcourseTests\\AspcourseTests.csproj",
       "packagesPath": "C:\\Users\\Vitaliy\\.nuget\\packages\\",
-      "outputPath": "G:\\Chat\\AspcourseTests\\obj\\",
+      "outputPath": "C:\\GitHub\\ChatDBPanel\\AspcourseTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -10216,8 +10216,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "G:\\Chat\\AspCourse\\AspCourse.csproj": {
-              "projectPath": "G:\\Chat\\AspCourse\\AspCourse.csproj"
+            "C:\\GitHub\\ChatDBPanel\\AspCourse\\AspCourse.csproj": {
+              "projectPath": "C:\\GitHub\\ChatDBPanel\\AspCourse\\AspCourse.csproj"
             }
           }
         }

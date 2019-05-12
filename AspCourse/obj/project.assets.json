@@ -12806,11 +12806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Chat\\AspCourse\\AspCourse.csproj",
+      "projectUniqueName": "C:\\GitHub\\ChatDBPanel\\AspCourse\\AspCourse.csproj",
       "projectName": "AspCourse",
-      "projectPath": "G:\\Chat\\AspCourse\\AspCourse.csproj",
+      "projectPath": "C:\\GitHub\\ChatDBPanel\\AspCourse\\AspCourse.csproj",
       "packagesPath": "C:\\Users\\Vitaliy\\.nuget\\packages\\",
-      "outputPath": "G:\\Chat\\AspCourse\\obj\\",
+      "outputPath": "C:\\GitHub\\ChatDBPanel\\AspCourse\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,15 @@
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\AspCourse.Views.dll
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\AspCourse.Views.pdb
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.deps.json
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.runtimeconfig.json
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.runtimeconfig.dev.json
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\b\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.dll
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\i\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.csprojAssemblyReference.cache
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\i\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.csproj.CoreCompileInputs.cache
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\i\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.AssemblyInfoInputs.cache
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\i\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.AssemblyInfo.cs
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\i\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.csproj.CopyComplete
+C:\GitHub\ChatDBPanel\.vs\AspCourse\lut\0\i\AspcourseTests\Debug\netcoreapp2.1\AspcourseTests.dll
